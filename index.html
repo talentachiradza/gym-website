@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Website</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <a href="#"><i class="fas fa-dumbbell"></i> Gym</a> <!-- Logo with Font Awesome icon -->
+        </div>
+        <div class="burger" id="burger">
+            <i class="fas fa-bars"></i> <!-- Burger icon -->
+        </div>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="facilities.html"><i class="fas fa-building"></i> Facilities</a></li>
+            <li><a href="services.html"><i class="fas fa-concierge-bell"></i> Services</a></li>
+            <li><a href="membership.html"><i class="fas fa-users"></i> Membership</a></li>
+        </ul>
+    </nav>
+
+    <!-- Header Section -->
+    <header id="home">
+        <div class="header-container">
+            <h1>Welcome to Our Gym</h1>
+            <p>Achieve your fitness goals with us!</p>
+            <a href="facilities.html" class="btn">Explore Facilities</a>
+        </div>
+    </header>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Gym Website. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript for Navbar Toggle -->
+    <script>
+        const burger = document.getElementById('burger');
+        const navLinks = document.getElementById('nav-links');
+
+        burger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            burger.querySelector('i').classList.toggle('fa-times');
+        });
+    </script>
+</body>
+</html>
